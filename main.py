@@ -1,8 +1,9 @@
 from Insurance.logger import logging
 from Insurance.exception import InsuranceException
 import os,sys
+from Insurance.utils import get_collection_as_dataframe
 
-def test_logger_and_exception():
+'''def test_logger_and_exception():
     try:
         logging.info("Starting the test_logger_and_exception")
         result = 3/0
@@ -10,11 +11,12 @@ def test_logger_and_exception():
         logging.info("Stoping the test_logger_and_exception")
     except Exception as e:
         logging.debug(str(e))
-        raise InsuranceException(e, sys)
+        raise InsuranceException(e, sys)'''  #this is just to check logging 
 
 if __name__=="__main__":
     try:
-        test_logger_and_exception()
+        #test_logger_and_exception()
+        get_collection_as_dataframe(database_name="INSURANCE", collection_name="INSURANCE_PROJECT")
     except Exception as e:
         print(e)
         
