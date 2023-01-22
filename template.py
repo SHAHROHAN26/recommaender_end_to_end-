@@ -17,7 +17,7 @@ logging.info("creating project by name:",Project_Name)
 
 list_of_file=[
     ".github/workflow/.gitkeep",
-    ".github/eorkflow/main.yaml",
+    ".github/workflow/main.yaml",
     f"{Project_Name}/__init__.py",
     f"{Project_Name}/components/__init__.py",
     f"{Project_Name}/entity/__init__.py",
